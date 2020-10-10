@@ -33,4 +33,9 @@ public class UserController {
         return user;
     }
 
+    @GetMapping("/user")
+    public String getUser(){
+        return "User is found";
+    }
+
 }

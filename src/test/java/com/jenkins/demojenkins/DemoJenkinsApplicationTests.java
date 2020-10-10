@@ -52,6 +52,7 @@ class DemoJenkinsApplicationTests {
 		User user=new User(999, "TestName", 999, "TestAddressAdd");
 		when(userRepository.save(user)).thenReturn(user);
 		assertEquals(user,userService.addUser(user));
+		verify(userRepository).save(user);
 	}
 
 	@Test
