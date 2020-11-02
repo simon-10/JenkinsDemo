@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class StudentService {
 
-    public List<Student> getAllStudents(){
+    public List<Student> getStudents(){
         return Arrays.asList(
                 new Student(1,"Simon","Asmara"),
                 new Student(2,"Filimon","Masawa"),
